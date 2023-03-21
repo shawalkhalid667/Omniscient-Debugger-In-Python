@@ -1,1 +1,1 @@
-# Omniscient-Debugger-In-Python
+# python-omniscient-debugger
