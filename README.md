@@ -2,21 +2,21 @@
 
 # Problem Statement:
 
-# Omniscient Debugging (also called Time Travel Debugging or Reverse Debugging) allows programmers to step back in time when debugging their code. 
+Omniscient Debugging (also called Time Travel Debugging or Reverse Debugging) allows programmers to step back in time when debugging their code. 
 
-# Omniscient debuggers save developers’ time by obviating the need for repetitive reruns that they have to perform in order to narrow down a program fault using an error symptom. 
+Omniscient debuggers save developers’ time by obviating the need for repetitive reruns that they have to perform in order to narrow down a program fault using an error symptom. 
 
 # Motivation:
 
-# Debugging is a challenging and time-consuming process for software developers.
+Debugging is a challenging and time-consuming process for software developers.
 
-# Despite advances in debugging tools, upto 80% of the development costs are spent on discovering and isolating program faults
+Despite advances in debugging tools, upto 80% of the development costs are spent on discovering and isolating program faults
 
-# It is very common for developers to have to iteratively rerun the program with different breakpoints in order to isolate the fault.
+It is very common for developers to have to iteratively rerun the program with different breakpoints in order to isolate the fault.
 
 # Methodology:
 
-# Our implementation uses a tracer/tracee model, Tracer can use PTrace to manipulate tracee’s registers, stack and instructions
+Our implementation uses a tracer/tracee model, Tracer can use PTrace to manipulate tracee’s registers, stack and instructions
 
 # Debuggers work as follows:
 User specifies a line to add a breakpoint to
