@@ -27,6 +27,22 @@ Debugger will fork and start the tracee as a child process using execve() with p
 At runtime, we swap out the original assembly instruction with a one byte instruction to generate a software interrupt. (0xCC, or int 3)
 How are debuggers made omniscient (state capture, scaling issues, record and replay, syscalls)
 
+# Implementation:
+
+Since debugger needs to capture state after every instruction, it needs to interrupt after every instruction resulting in frequent context switches.
+Python to c back to python several times for each debugging step accumulates quickly
+Other sources of overhead
+Ptrace is a libc function, we need to interface with c code
+Data types need to be converted at each call
+
+#Conclusion:
+
+Providing developers with the ability to create a line-by-line execution. 
+
+Enabling developers to debug both forward and backward with the help of time travel debugging. 
+
+With the help of ptrace access to the complete stack being used by program.
+
 
 
 
